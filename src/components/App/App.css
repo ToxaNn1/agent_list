@@ -1,0 +1,159 @@
+.App {
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+/* input */
+
+.search-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input {
+    display: flex;
+    padding: 10px;
+    flex-grow: 4;
+    font-size: 20px;
+}
+
+.button {
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    font-size: 20px;
+}
+
+/* chart button */
+
+.block-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.button-chart {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+/* table */
+
+.table-body .block-agents:nth-child(odd) {
+    background: #eee;
+}
+
+.container-agent {
+    font-family: "Arial";
+    margin: 25px auto;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #00cccc;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05),
+        0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+
+.agent-paragraph,
+.headers {
+    padding: 15px 16px;
+    color: #999;
+    border: 1px solid #eee;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18px;
+}
+.headers {
+    background: #00cccc;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* chart */
+.wrraper-chart {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* filter */
+
+.filter-container {
+}
+.filter-header {
+    text-align: center;
+    cursor: pointer;
+}
+.radio-wrapper {
+    display: block;
+    transition: 1s ease;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.radio-wrapper__hide {
+    transition: 1s ease;
+    display: none;
+}
+.radio-block__left {
+}
+.radio-block__right {
+}
+.radio-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+}
+.radio-text {
+    font-size: 20px;
+}
+.radio {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .agent-paragraph,
+    .headers {
+        padding: 10px 5px;
+        font-size: 15px;
+    }
+    .App {
+        padding: 0px 10px 10px 10px;
+    }
+    .container-agent,
+    .table-body {
+        display: flex;
+    }
+    .headers-block,
+    .header-table,
+    .block-agents {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-agent {
+        overflow: hidden;
+    }
+    .table-body {
+        overflow: scroll;
+        overflow-y: hidden;
+    }
+}
+
+@media (max-width: 320px) {
+    .input {
+        font-size: 17px;
+        padding: 6px;
+    }
+    .button {
+        font-size: 19px;
+        padding: 5px;
+    }
+}
